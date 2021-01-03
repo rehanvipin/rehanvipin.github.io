@@ -1,28 +1,57 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Black and White</title>
+    <title>About on Rehan Vipin</title>
     <link>https://rehanvipin.github.io/</link>
-    <description>Recent content on Black and White</description>
+    <description>Recent content in About on Rehan Vipin</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 23 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://rehanvipin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Jan 2021 19:40:15 +0530</lastBuildDate><atom:link href="https://rehanvipin.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Whoami</title>
-      <link>https://rehanvipin.github.io/about/</link>
-      <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
+      <title>Second</title>
+      <link>https://rehanvipin.github.io/blog/second/</link>
+      <pubDate>Sun, 03 Jan 2021 23:55:23 +0530</pubDate>
       
-      <guid>https://rehanvipin.github.io/about/</guid>
-      <description>Split into what I am right now and what I want to become through my career.</description>
+      <guid>https://rehanvipin.github.io/blog/second/</guid>
+      <description>Placeholder blog #2</description>
     </item>
     
     <item>
-      <title>Introduction</title>
-      <link>https://rehanvipin.github.io/post/intro/</link>
-      <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+      <title>First</title>
+      <link>https://rehanvipin.github.io/blog/first/</link>
+      <pubDate>Sun, 03 Jan 2021 23:55:18 +0530</pubDate>
       
-      <guid>https://rehanvipin.github.io/post/intro/</guid>
-      <description>&lt;p&gt;Recreating my homepage on the internet with Hugo.&lt;/p&gt;</description>
+      <guid>https://rehanvipin.github.io/blog/first/</guid>
+      <description>Placeholder blog #1</description>
+    </item>
+    
+    <item>
+      <title>Notes</title>
+      <link>https://rehanvipin.github.io/notes/</link>
+      <pubDate>Sun, 03 Jan 2021 23:54:54 +0530</pubDate>
+      
+      <guid>https://rehanvipin.github.io/notes/</guid>
+      <description>Place for notes I&amp;rsquo;ll make in future courses </description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://rehanvipin.github.io/projects/</link>
+      <pubDate>Sun, 03 Jan 2021 23:26:46 +0530</pubDate>
+      
+      <guid>https://rehanvipin.github.io/projects/</guid>
+      <description>Some of my fancy projects :) Brilliant innit?
+Cryptography  Awesome #1 Awesome #2  Systems  Woohoo #1 Woohoo #2  Deep learning  A predictive text editor, in C  </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://rehanvipin.github.io/about/</link>
+      <pubDate>Sun, 03 Jan 2021 19:40:15 +0530</pubDate>
+      
+      <guid>https://rehanvipin.github.io/about/</guid>
+      <description>About Me  I&amp;rsquo;m a Junior at PES University studying Computer Science Engineering. Domains I&amp;rsquo;m majorly interested in -
+ Cryptography Hacking around systems and distributed systems Quantum mechanics and quantum information science Algorithms (Discrete optimization, Game theory) Deep learning (reinforcement learning)  I love hacking systems (not cracking them!) to learn how they work. My hobbies include Cycling, Drawing and reading Mystery books :)</description>
     </item>
     
   </channel>
