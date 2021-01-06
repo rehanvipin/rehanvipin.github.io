@@ -40,8 +40,8 @@
       <pubDate>Sun, 03 Jan 2021 23:26:46 +0530</pubDate>
       
       <guid>https://rehanvipin.github.io/projects/</guid>
-      <description>Some of my fancy projects :) Brilliant innit?
-Cryptography  Awesome #1 Awesome #2  Systems  Woohoo #1 Woohoo #2  Deep learning  A predictive text editor, in C  </description>
+      <description>Some projects I&amp;rsquo;ve worked on :) Favourites for each category. Not part of work. Check resume for more serious ones and github for other less serious ones :P.
+Cryptography  Portable file security. Similar to AxCrypt Collection of cryptographic protocol implementations. e.g. Oblivious transfer  Systems  Hadoop YARN clone + analysis for map-reduce jobs Rootless lightweight containers Multithreaded webserver in C, with some Apache like features  Deep learning  A text editor that predicts what you want to type, in C A program that writes a story/script given an initial paragraph  Games  Flappy-bird clone with GUI leaderboards and user login systems Andromeda is a toy pandemic simulator  Web development  A platform to distribute files on LAN with duplex messaging and user logins   Also maintained the above project for hacktoberfest 2019 where it received contributions from various users.</description>
     </item>
     
     <item>
