@@ -8,30 +8,35 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Jan 2021 19:40:15 +0530</lastBuildDate><atom:link href="https://rehanvipin.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Second</title>
-      <link>https://rehanvipin.github.io/blog/second/</link>
-      <pubDate>Sun, 03 Jan 2021 23:55:23 +0530</pubDate>
+      <title>My core beliefs</title>
+      <link>https://rehanvipin.github.io/blog/random/beliefs/</link>
+      <pubDate>Wed, 06 Jan 2021 15:40:46 +0530</pubDate>
       
-      <guid>https://rehanvipin.github.io/blog/second/</guid>
-      <description>Placeholder blog #2</description>
+      <guid>https://rehanvipin.github.io/blog/random/beliefs/</guid>
+      <description>A few things I believe :  Optimal states are a balance of options. Applies to all points below too First make things work, then make them perfect over iterations Work for things close to you before changing the world Careful planning in the start can save a lot of time later on Miscommunication is a major problem that we should work more on Success is determined by a mix of effort you put in and the opportunities you have  </description>
     </item>
     
     <item>
-      <title>First</title>
-      <link>https://rehanvipin.github.io/blog/first/</link>
-      <pubDate>Sun, 03 Jan 2021 23:55:18 +0530</pubDate>
+      <title>Expectations from this blog</title>
+      <link>https://rehanvipin.github.io/blog/expect/</link>
+      <pubDate>Wed, 06 Jan 2021 13:03:49 +0530</pubDate>
       
-      <guid>https://rehanvipin.github.io/blog/first/</guid>
-      <description>Placeholder blog #1</description>
+      <guid>https://rehanvipin.github.io/blog/expect/</guid>
+      <description>What will you see here? There are many random things I want to write down and let the world know.
+Like this blog article, which doesn&amp;rsquo;t have much reason to exist.
+But hey, this is my webiste. I hope to loosen the constraints I keep on other platforms.
+A few general themes can be expected though.
+ Software development. Will mostly be a major part of my career so only fitting.</description>
     </item>
     
     <item>
-      <title>Notes</title>
-      <link>https://rehanvipin.github.io/notes/</link>
+      <title>Reviews</title>
+      <link>https://rehanvipin.github.io/reviews/</link>
       <pubDate>Sun, 03 Jan 2021 23:54:54 +0530</pubDate>
       
-      <guid>https://rehanvipin.github.io/notes/</guid>
-      <description>Place for notes I&amp;rsquo;ll make in future courses </description>
+      <guid>https://rehanvipin.github.io/reviews/</guid>
+      <description>Paper / Project reviews When I think something is super cool but don&amp;rsquo;t know what to do about it.
+Coming soon &amp;hellip;</description>
     </item>
     
     <item>
@@ -41,7 +46,7 @@
       
       <guid>https://rehanvipin.github.io/projects/</guid>
       <description>Some projects I&amp;rsquo;ve worked on :) Favourites for each category. Not part of work. Check resume for more serious ones and github for other less serious ones :P.
-Cryptography  Portable file security. Similar to AxCrypt Collection of cryptographic protocol implementations. e.g. Oblivious transfer  Systems  Hadoop YARN clone + analysis for map-reduce jobs Rootless lightweight containers Multithreaded webserver in C, with some Apache like features  Deep learning  A text editor that predicts what you want to type, in C A program that writes a story/script given an initial paragraph  Games  Flappy-bird clone with GUI leaderboards and user login systems Andromeda is a toy pandemic simulator  Web development  A platform to distribute files on LAN with duplex messaging and user logins   Also maintained the above project for hacktoberfest 2019 where it received contributions from various users.</description>
+Cryptography  Portable file security. Similar to AxCrypt Collection of cryptographic protocol implementations. e.g. Oblivious transfer  Systems  Hadoop YARN clone + analysis for map-reduce jobs Rootless lightweight containers Multithreaded webserver in C, with some Apache like features  Deep learning  A text editor that predicts what you want to type, in C A program that writes a story/script given an initial paragraph  Games  Flappy-bird clone with GUI leaderboards and user login systems Andromeda is a toy pandemic simulator  Web development  A platform to distribute files on LAN with duplex messaging and user logins</description>
     </item>
     
     <item>

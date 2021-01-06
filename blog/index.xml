@@ -6,23 +6,18 @@
     <description>Recent content in Blogs on Rehan Vipin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Jan 2021 23:55:23 +0530</lastBuildDate><atom:link href="https://rehanvipin.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jan 2021 17:40:48 +0530</lastBuildDate><atom:link href="https://rehanvipin.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Second</title>
-      <link>https://rehanvipin.github.io/blog/second/</link>
-      <pubDate>Sun, 03 Jan 2021 23:55:23 +0530</pubDate>
+      <title>Expectations from this blog</title>
+      <link>https://rehanvipin.github.io/blog/expect/</link>
+      <pubDate>Wed, 06 Jan 2021 13:03:49 +0530</pubDate>
       
-      <guid>https://rehanvipin.github.io/blog/second/</guid>
-      <description>Placeholder blog #2</description>
-    </item>
-    
-    <item>
-      <title>First</title>
-      <link>https://rehanvipin.github.io/blog/first/</link>
-      <pubDate>Sun, 03 Jan 2021 23:55:18 +0530</pubDate>
-      
-      <guid>https://rehanvipin.github.io/blog/first/</guid>
-      <description>Placeholder blog #1</description>
+      <guid>https://rehanvipin.github.io/blog/expect/</guid>
+      <description>What will you see here? There are many random things I want to write down and let the world know.
+Like this blog article, which doesn&amp;rsquo;t have much reason to exist.
+But hey, this is my webiste. I hope to loosen the constraints I keep on other platforms.
+A few general themes can be expected though.
+ Software development. Will mostly be a major part of my career so only fitting.</description>
     </item>
     
   </channel>
