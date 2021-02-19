@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Rehan Vipin</title>
-    <link>https://rehanvipin.github.io/blog/</link>
+    <link>http://rehanvipin.me/blog/</link>
     <description>Recent content in Blogs on Rehan Vipin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jan 2021 17:40:48 +0530</lastBuildDate><atom:link href="https://rehanvipin.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jan 2021 17:39:52 +0530</lastBuildDate><atom:link href="http://rehanvipin.me/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Expectations from this blog</title>
-      <link>https://rehanvipin.github.io/blog/expect/</link>
+      <link>http://rehanvipin.me/blog/expect/</link>
       <pubDate>Wed, 06 Jan 2021 13:03:49 +0530</pubDate>
       
-      <guid>https://rehanvipin.github.io/blog/expect/</guid>
+      <guid>http://rehanvipin.me/blog/expect/</guid>
       <description>What will you see here? There are many random things I want to write down and let the world know.
 Like this blog article, which doesn&amp;rsquo;t have much reason to exist.
 But hey, this is my webiste. I hope to loosen the constraints I keep on other platforms.
