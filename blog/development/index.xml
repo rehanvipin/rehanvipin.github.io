@@ -2,10 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Development on Rehan Vipin</title>
-    <link>https://rehanvipin.github.io/blog/development/</link>
+    <link>https://rehanvipin.me/blog/development/</link>
     <description>Recent content in Development on Rehan Vipin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jan 2021 17:40:28 +0530</lastBuildDate><atom:link href="https://rehanvipin.github.io/blog/development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jan 2021 17:40:28 +0530</lastBuildDate><atom:link href="https://rehanvipin.me/blog/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Newsite</title>
+      <link>https://rehanvipin.me/blog/development/newsite/</link>
+      <pubDate>Sat, 20 Feb 2021 15:41:32 +0530</pubDate>
+      
+      <guid>https://rehanvipin.me/blog/development/newsite/</guid>
+      <description>Create a portfolio site (minimum expenditure &amp;amp; work) I created my portfolio site with Hugo, again!
+This time, with a plan and adequate free time, I was able to get it to a publishable version 1.0. There is almost no front-end development involved and zero back-end work too(I did work on the backend engine of verless, another static site generator, so not technically zero xD).
+I will document the process soon, but here are the main steps:</description>
+    </item>
+    
   </channel>
 </rss>
