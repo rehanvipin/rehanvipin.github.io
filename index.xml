@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Rehan Vipin</title>
-    <link>http://rehanvipin.me/</link>
+    <link>https://rehanvipin.me/</link>
     <description>Recent content in About on Rehan Vipin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Jan 2021 19:40:15 +0530</lastBuildDate><atom:link href="http://rehanvipin.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Jan 2021 19:40:15 +0530</lastBuildDate><atom:link href="https://rehanvipin.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My core beliefs</title>
-      <link>http://rehanvipin.me/blog/random/beliefs/</link>
+      <link>https://rehanvipin.me/blog/random/beliefs/</link>
       <pubDate>Wed, 06 Jan 2021 15:40:46 +0530</pubDate>
       
-      <guid>http://rehanvipin.me/blog/random/beliefs/</guid>
+      <guid>https://rehanvipin.me/blog/random/beliefs/</guid>
       <description>A few things I believe :  Optimal states are a balance of options. Applies to all points below too First make things work, then make them perfect over iterations Work for things close to you before changing the world Careful planning in the start can save a lot of time later on Miscommunication is a major problem that we should work more on Success is determined by a mix of effort you put in and the opportunities you have  </description>
     </item>
     
     <item>
       <title>Expectations from this blog</title>
-      <link>http://rehanvipin.me/blog/expect/</link>
+      <link>https://rehanvipin.me/blog/expect/</link>
       <pubDate>Wed, 06 Jan 2021 13:03:49 +0530</pubDate>
       
-      <guid>http://rehanvipin.me/blog/expect/</guid>
+      <guid>https://rehanvipin.me/blog/expect/</guid>
       <description>What will you see here? There are many random things I want to write down and let the world know.
 Like this blog article, which doesn&amp;rsquo;t have much reason to exist.
 But hey, this is my webiste. I hope to loosen the constraints I keep on other platforms.
@@ -31,30 +31,30 @@ A few general themes can be expected though.
     
     <item>
       <title>Reviews</title>
-      <link>http://rehanvipin.me/reviews/</link>
+      <link>https://rehanvipin.me/reviews/</link>
       <pubDate>Sun, 03 Jan 2021 23:54:54 +0530</pubDate>
       
-      <guid>http://rehanvipin.me/reviews/</guid>
+      <guid>https://rehanvipin.me/reviews/</guid>
       <description>Paper / Project reviews When I think something is super cool but don&amp;rsquo;t know what to do about it.
 Coming soon &amp;hellip;</description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>http://rehanvipin.me/projects/</link>
+      <link>https://rehanvipin.me/projects/</link>
       <pubDate>Sun, 03 Jan 2021 23:26:46 +0530</pubDate>
       
-      <guid>http://rehanvipin.me/projects/</guid>
+      <guid>https://rehanvipin.me/projects/</guid>
       <description>Some projects I&amp;rsquo;ve worked on :) Favourites for each category. Not part of work. Check resume for more serious ones and github for other less serious ones :P.
 Cryptography  Portable file security. Similar to AxCrypt Collection of cryptographic protocol implementations. e.g. Oblivious transfer  Systems  Hadoop YARN clone + analysis for map-reduce jobs Rootless lightweight containers Multithreaded webserver in C, with some Apache like features  Deep learning  A text editor that predicts what you want to type, in C A program that writes a story/script given an initial paragraph  Games  Flappy-bird clone with GUI leaderboards and user login systems Andromeda is a toy pandemic simulator  Web development  A platform to distribute files on LAN with duplex messaging and user logins</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://rehanvipin.me/about/</link>
+      <link>https://rehanvipin.me/about/</link>
       <pubDate>Sun, 03 Jan 2021 19:40:15 +0530</pubDate>
       
-      <guid>http://rehanvipin.me/about/</guid>
+      <guid>https://rehanvipin.me/about/</guid>
       <description>About Me  I&amp;rsquo;m a Junior at PES University studying Computer Science Engineering. Domains I&amp;rsquo;m majorly interested in -
  Cryptography Hacking around systems and distributed systems Quantum mechanics and quantum information science Algorithms (Discrete optimization, Game theory) Deep learning (reinforcement learning)  I love hacking systems (not cracking them!) to learn how they work. I like Developer communities and collaborative learning too. My hobbies include Cycling, Drawing and reading Mystery books :)</description>
     </item>
