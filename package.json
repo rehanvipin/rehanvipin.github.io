@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "rvhomepage",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,6 +9,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.17.1"
+    "astro": "^6.1.1"
   }
 }
