@@ -8,10 +8,16 @@ html, body {
 }
 
 body {
-	display: grid;
-	place-items: center;
-	grid-template-columns: repeat(12, 1fr);
 	background-color: #222;
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
 }
 
 @media (prefers-color-scheme: light) {

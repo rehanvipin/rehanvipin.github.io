@@ -1,0 +1,92 @@
+---
+import BaseLayout from "../layout/BaseLayout.astro";
+---
+
+<style>
+    h1 {
+        grid-column: 2 / span 11;
+        text-align: left;
+        color: white;
+    }
+    article {
+        grid-column: 2 / span 10;
+        color: white;
+    }
+
+    article a {
+        color: #00e5ff;
+    }
+    article a:visited {
+        color: #3e90dc;
+    }
+
+    @media (prefers-color-scheme: light) {
+        h1, article {
+            color: #111;
+        }
+        article a {
+            color: #ff6600;
+        }
+        article a:visited {
+            color: #704b10;
+        }
+    }
+
+    blockquote p::before {
+        content: "\201C";
+    }
+
+    blockquote p::after {
+        content: "\201D";
+    }
+
+    blockquote + p {
+        text-align: right;
+    }
+</style>
+
+<BaseLayout title="About Me">
+    <h1>A little bit about me.</h1>
+    <article class="aboutsummary">
+        <h2>Hey, yo.</h2>
+        <p>
+            My name is Rehan, and as you might've guessed, I like to code and
+            solve problems to save time and effort for people.
+        </p>
+        <p>
+            This is my home page on the internet, so this is going to be <span
+                style="font-style: italic;">all about me</span
+            >.
+        </p>
+        <br />
+        <p>
+            I like to keep things simple (in general), so I'm trying to make
+            this website with standard HTML elements. That does not mean not
+            using a framework. Frameworks make development simpler by reducing
+            duplication. However, I'm looking for as little magic as possible. I
+            like to understand things and hack around. <a
+                href="https://astro.build/">Astro</a
+            > helps here.
+        </p>
+        <p>
+            What does that mean? Using semantic HTML elements and using as much
+            of the browser's capabilities as possible. Oh, and no AI. I would
+            like to use my brain when talking about myself, thankyouvermuch.
+        </p>
+    </article>
+
+    <article>
+        <h2>Quotes</h2>
+        <p>Some quotes which I like.</p>
+        <br />
+        <blockquote
+            cite="https://quoteinvestigator.com/2011/05/13/einstein-simple/"
+        >
+            <p>
+                Everything Should Be Made as Simple as Possible, But Not
+                Simpler.
+            </p>
+        </blockquote>
+        <p>—Albert Einstein</p>
+    </article>
+</BaseLayout>
