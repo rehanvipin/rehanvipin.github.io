@@ -4,38 +4,11 @@ import BaseLayout from "../layout/BaseLayout.astro";
 
 <style>
 	.card {
-		grid-column: 5 / span 4;
-		align-self: center;
-
 		background-color: #111;
 		color: #eee;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		row-gap: 1rem;
-		font-size: 2rem;
-		padding: 1rem;
-		border: #aaa 0.2rem ridge;
-		border-radius: 0.6rem;
-	}
 
-	.name {
-		background: linear-gradient(
-			45deg,
-			#5ca4c0 20%,
-			#30f0d9 20% 40%,
-			#e9c46a 40% 60%,
-			#f4a261 60% 80%,
-			#e76f51 80%
-		);
-		font-size: 4rem;
-		font-weight: bolder;
-		text-align: center;
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		padding: 0.5rem;
+		border: #aaa 0.1rem solid;
+		border-radius: 0.6rem;
 	}
 
 	.contact {
@@ -55,43 +28,11 @@ import BaseLayout from "../layout/BaseLayout.astro";
 		border-radius: 0.5rem;
 	}
 
-	@media (max-width: 1400px) {
-		.card {
-			grid-column: 4 / span 6;
-		}
-	}
-
-	@media (max-width: 576px) {
-		.card {
-			grid-column: 2 / span 10;
-			font-size: 1.5rem;
-		}
-		.name {
-			font-size: 3rem;
-		}
-		.contact {
-			font-size: 1rem;
-		}
-	}
-
 	@media (prefers-color-scheme: light) {
 		.card {
 			background-color: #e6d5c1;
 			color: #111;
-			border: #555 0.2rem ridge;
-		}
-		.name {
-			background: linear-gradient(
-				45deg,
-				#07506d 20%,
-				#058173 20% 40%,
-				#af7e04 40% 60%,
-				#c35b06 60% 80%,
-				#c02d09 80%
-			);
-			background-clip: text;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+			border: #555 0.1rem solid;
 		}
 		.email {
 			background: #c0b4a4;
@@ -100,16 +41,16 @@ import BaseLayout from "../layout/BaseLayout.astro";
 </style>
 
 <BaseLayout title="/">
-	<article class="card">
-		<div class="intro">Hi! My name is</div>
-		<div class="name">Rehan Vipin</div>
-		<div class="about">
-			<p>I like to learn how things work.</p>
-			<p>I develop software for fun and profit :)</p>
-		</div>
-		<div class="contact">
-			<span> You can reach me at: </span>
-			<span class="email"> rehanvipin@proton.me </span>
-		</div>
+	<article class="card container">
+		<h1>WWW Home Page of Rehan Vipin</h1>
+	</article>
+	<article class="card container about">
+		<p>I like to learn how things work.</p>
+		<p>I develop software for fun and profit :)</p>
+		<p>My most recent learning interest is practical cryptography.</p>
+	</article>
+	<article class="card contact container">
+		<span> You can reach me at: </span>
+		<span class="email"> rehanvipin@proton.me </span>
 	</article>
 </BaseLayout>

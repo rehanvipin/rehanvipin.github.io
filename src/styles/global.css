@@ -16,8 +16,13 @@ body {
 
 main {
 	flex: 1;
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	margin-top: 1rem;
+	padding: 0.5rem;
 }
 
 @media (prefers-color-scheme: light) {

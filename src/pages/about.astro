@@ -21,7 +21,8 @@ import BaseLayout from "../layout/BaseLayout.astro";
     }
 
     @media (prefers-color-scheme: light) {
-        h1, article {
+        h1,
+        article {
             color: #111;
         }
         article a {
@@ -46,17 +47,17 @@ import BaseLayout from "../layout/BaseLayout.astro";
 </style>
 
 <BaseLayout title="About Me">
-    <h1>A little bit about me.</h1>
-    <article class="aboutsummary">
-        <h2>Hey, yo.</h2>
+    <h1 class="container">A little bit about me.</h1>
+    <article class="aboutsummary container">
+        <h2>Hey.</h2>
         <p>
             My name is Rehan, and as you might've guessed, I like to code and
             solve problems to save time and effort for people.
         </p>
         <p>
-            This is my home page on the internet, so this is going to be <span
-                style="font-style: italic;">all about me</span
-            >.
+            This is <span style="font-style: italic;">my</span> home page on the internet,
+            so this is going to be
+            <span style="font-style: italic;">all about me</span>.
         </p>
         <br />
         <p>
@@ -68,14 +69,9 @@ import BaseLayout from "../layout/BaseLayout.astro";
                 href="https://astro.build/">Astro</a
             > helps here.
         </p>
-        <p>
-            What does that mean? Using semantic HTML elements and using as much
-            of the browser's capabilities as possible. Oh, and no AI. I would
-            like to use my brain when talking about myself, thankyouvermuch.
-        </p>
     </article>
 
-    <article>
+    <article class="container">
         <h2>Quotes</h2>
         <p>Some quotes which I like.</p>
         <br />
