@@ -1,28 +1,37 @@
 <style>
     .navbar {
-        background-color: #333;
         display: flex;
         justify-content: space-evenly;
+        padding: 0.2rem 0;
     }
 
     .navbar a {
         color: white;
+        padding: 0 0.5rem;
+    }
+    .navbar a:hover {
+        background: #48bd90;
+        color: #111;
     }
 
     @media (prefers-color-scheme: light) {
         .navbar {
-            background-color: #cebfad;
             color: #111;
         }
 
         .navbar a {
             color: #383838;
         }
+
+        .navbar a:hover {
+            background: #164a5b;
+            color: #fff;
+    }
     }
 </style>
 
-<nav class="navbar">
+<nav class="navbar small-container">
     <a href="/">Home</a>
-    <a href="/about">About Me</a>
+    <a href="/about">About</a>
     <a href="/RehanVipin_Resume.pdf">Résumé</a>
 </nav>

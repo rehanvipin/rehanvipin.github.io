@@ -7,25 +7,18 @@ import BaseLayout from "../layout/BaseLayout.astro";
 		background-color: #111;
 		color: #eee;
 
-		border: #aaa 0.1rem solid;
-		border-radius: 0.6rem;
+		border: #535353 0.1rem solid;
 	}
 
-	.contact {
+	.icon-image {
+		height: 2rem;
+		filter: invert(99%) sepia(5%) saturate(13%) hue-rotate(164deg) brightness(104%) contrast(100%);
+	}
+
+	.contact-icons {
 		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		column-gap: 1rem;
-		row-gap: 0.5rem;
-		justify-content: center;
-	}
-
-	.email {
-		display: inline-block;
-		font-family: monospace;
-		background: #222;
-		padding: 0.2rem;
-		border-radius: 0.5rem;
+		justify-content: space-evenly;
+		padding-top: 1rem;
 	}
 
 	@media (prefers-color-scheme: light) {
@@ -34,25 +27,26 @@ import BaseLayout from "../layout/BaseLayout.astro";
 			color: #111;
 			border: #555 0.1rem solid;
 		}
-		.email {
-			background: #c0b4a4;
+		.icon-image {
+			filter: invert(0%) sepia(0%) saturate(1610%) hue-rotate(148deg) brightness(136%) contrast(87%);
 		}
 	}
 </style>
 
 <BaseLayout title="/">
-	<article class="card container">
-		<h1>WWW Home Page of Rehan Vipin</h1>
-	</article>
-	<article class="card container about">
+	<article class="card small-container">
 		<p>Hi! Welcome to my corner of the internet.</p>
 		<p>I'm your host, Rehan.</p>
 		<br>
-		<p>I develop software for fun and profit :)</p>
-		<p>Right now, I'm researching applied cryptography, aside from my day job.</p>
+		<p>I develop software for fun and profit :) I've been doing professionally since 2021.</p>
+		<p>I also like to make music, read, and solve infosec challenges.</p>
 	</article>
-	<article class="card contact container">
-		<span> You can reach me at: </span>
-		<span class="email"> rehanvipin@proton.me </span>
+	<article class="card small-container">
+		<p> You can reach me at</p>
+		<p class="contact-icons">
+			<a href="mailto:rehanvipin@proton.me"><img src="/icons/envelope.svg" class="icon-image"/></a>
+			<a href="https://www.linkedin.com/in/rehan-vipin"><img src="/icons/linkedin.svg" class="icon-image"/></a>
+			<a href="https://github.com/rehanvipin"><img src="/icons/github.svg" class="icon-image"/></a>
+		</p>
 	</article>
 </BaseLayout>
