@@ -32,8 +32,22 @@ main {
 	padding: 0.5rem;
 }
 
+article a {
+	color: #00e5ff;
+}
+article a:visited {
+	color: #3e90dc;
+}
+
 @media (prefers-color-scheme: light) {
 	body {
 		background-color: #dfd6cb;
+	}
+
+	article a {
+		color: #ff6600;
+	}
+	article a:visited {
+		color: #704b10;
 	}
 }

@@ -13,23 +13,10 @@ import BaseLayout from "../layout/BaseLayout.astro";
         color: white;
     }
 
-    article a {
-        color: #00e5ff;
-    }
-    article a:visited {
-        color: #3e90dc;
-    }
-
     @media (prefers-color-scheme: light) {
         h1,
         article {
             color: #111;
-        }
-        article a {
-            color: #ff6600;
-        }
-        article a:visited {
-            color: #704b10;
         }
     }
 
@@ -39,10 +26,6 @@ import BaseLayout from "../layout/BaseLayout.astro";
 
     blockquote p::after {
         content: "\201D";
-    }
-
-    blockquote + p {
-        text-align: right;
     }
 </style>
 
