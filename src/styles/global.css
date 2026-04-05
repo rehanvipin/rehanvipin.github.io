@@ -3,7 +3,9 @@
 	margin: 0;
 	padding: 0;
 }
-html, body {
+
+html,
+body {
 	height: 100%;
 }
 
@@ -35,8 +37,17 @@ main {
 article a {
 	color: #00e5ff;
 }
+
 article a:visited {
 	color: #3e90dc;
+}
+
+h1 {
+	color: white;
+}
+
+article {
+	color: white;
 }
 
 @media (prefers-color-scheme: light) {
@@ -47,7 +58,13 @@ article a:visited {
 	article a {
 		color: #ff6600;
 	}
+
 	article a:visited {
 		color: #704b10;
+	}
+
+	h1,
+	article {
+		color: #111;
 	}
 }

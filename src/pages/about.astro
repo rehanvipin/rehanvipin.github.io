@@ -3,22 +3,6 @@ import BaseLayout from "../layout/BaseLayout.astro";
 ---
 
 <style>
-    h1 {
-        grid-column: 2 / span 11;
-        text-align: left;
-        color: white;
-    }
-    article {
-        grid-column: 2 / span 10;
-        color: white;
-    }
-
-    @media (prefers-color-scheme: light) {
-        h1,
-        article {
-            color: #111;
-        }
-    }
 
     blockquote p::before {
         content: "\201C";
