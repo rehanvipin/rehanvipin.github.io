@@ -3,7 +3,12 @@ import BaseLayout from "../layout/BaseLayout.astro";
 ---
 
 <style>
-
+    .horizontal-list {
+        display: flex;
+        column-gap: 1.5rem;
+        list-style: circle;
+        flex-wrap: wrap;
+    }
     blockquote p::before {
         content: "\201C";
     }
@@ -21,7 +26,50 @@ import BaseLayout from "../layout/BaseLayout.astro";
             My name is Rehan. I like to code and solve problems with the aim of
             saving time and effort for people.
         </p>
+        <p>
+            I also like other creative pursuits such as making music, cooking,
+            sketching, writing, photography.
+        </p>
+        <p>
+            I like to do lot of things, but this year I'll try to focus on two
+            of these hobbies and get good at them.
+        </p>
+    </article>
+
+    <article class="container">
+        <h2>Technical Skills</h2>
         <br />
+        <h3>Programming Languages</h3>
+        <ul class="horizontal-list">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>ShellScript</li>
+        </ul>
+        <p>
+            I have also created applications using Scala, Go, and Assembly, but
+            not in a professional setting.
+        </p>
+        <br />
+        <h3>Domains</h3>
+        <p>
+            I would classify a "domain" as a sub-field of work. These are
+            domains where I have worked on non-trivial projects. I have / had
+            reasonable depth of knowledge in them.
+        </p>
+        <ul class="horizontal-list">
+            <li>Web Site Development</li>
+            <li>Web App Development</li>
+            <li>Distributed Microservices</li>
+            <li>Cryptography</li>
+            <li>Parallel Computing & HPC</li>
+            <li>Deep Learning</li>
+        </ul>
     </article>
 
     <article class="container">

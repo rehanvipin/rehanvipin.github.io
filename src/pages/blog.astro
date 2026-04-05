@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layout/BaseLayout.astro";
+const pages = Object.values(
+    import.meta.glob("./blog-posts/*.md", { eager: true }),
+);
+---
+
+<BaseLayout title="Blog Landing Page">
+    <article class="container">
+        <h1>Articles on tech, self-growth, and experimentation.</h1>
+        <p>
+            This helps in sharing thoughts and knowledge. I also improve my
+            writing skills.
+        </p>
+        <p>
+            For purely technical content, I also have a webpage <a
+                href="https://work.rehanvipin.me">work.rehanvipin.me</a
+            > that contains learning notes & references.
+        </p>
+        <br />
+        <p>Posts:</p>
+        <ol>
+            {
+                pages.map((page: any) => (
+                    <li>
+                        <a href={page.url}>{page.frontmatter.title}</a>
+                    </li>
+                ))
+            }
+        </ol>
+    </article>
+</BaseLayout>
