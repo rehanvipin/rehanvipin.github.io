@@ -3,6 +3,12 @@ import BaseLayout from "../layout/BaseLayout.astro";
 const pages = Object.values(
     import.meta.glob("./blog-posts/*.md", { eager: true }),
 );
+const dateFormat = (dateStr: Date) => {
+    const dateFull = new Date(dateStr);
+    const month = String(dateFull.getMonth()+1).padStart(2, '0');
+    const day = String(dateFull.getDate()).padStart(2, '0');
+    return `${dateFull.getFullYear()}-${month}-${day}`;
+}
 ---
 
 <BaseLayout title="Blog Landing Page">
@@ -23,10 +29,12 @@ const pages = Object.values(
             {
                 pages.map((page: any) => (
                     <li>
-                        <a href={page.url}>{page.frontmatter.title}</a>
+                        <a href={page.url}>{page.frontmatter.title}</a> ({dateFormat(page.frontmatter.pubDate)})
                     </li>
                 ))
             }
         </ol>
+        <br/>
+        <p>AI Warning - My AI warning is that I don't use it here. These are my words and mine only.</p>
     </article>
 </BaseLayout>
