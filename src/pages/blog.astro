@@ -3,6 +3,10 @@ import BaseLayout from "../layout/BaseLayout.astro";
 const pages = Object.values(
     import.meta.glob("./blog-posts/*.md", { eager: true }),
 );
+pages.sort((p1: any, p2: any) => {
+    const timeDiff = new Date(p1.frontmatter.pubDate).getTime() - new Date(p2.frontmatter.pubDate).getTime();
+    return timeDiff * -1;
+});
 const dateFormat = (dateStr: Date) => {
     const dateFull = new Date(dateStr);
     const month = String(dateFull.getMonth()+1).padStart(2, '0');

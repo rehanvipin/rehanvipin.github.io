@@ -40,4 +40,10 @@ Okay, taking a look, it seems like the performance is really bad. Lighthouse sco
 There were three ways to use this thing apparently. Through the terminal, desktop application, and through an IDE.
 The IDE part is just like another terminal though, so not too much difference.
 
-Not too hard to set it up, it uses a free model by default. I hope it doesn't mess up my system.
+Not too hard to set it up, it uses a free model by default. Big Pickle is the name. Not bad.
+
+It's quite good actually. I can write code in plan & build mode. I can create agents through the guided setting.
+Now I need to explore skills, tools, and MCPs to see how those features work.
+
+This is the first time I'm using a CLI based AI coding tool, and it seems as good as the VS Code based Copilot.
+The only thing is that reviews are a bit more challenging. But I would have like to review from git diffs in any case.
