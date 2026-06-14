@@ -67,5 +67,6 @@ I found some new concepts when doing this experiment. Should go over them some t
 * Dynamic quantization. https://unsloth.ai/docs/basics/unsloth-dynamic-2.0-ggufs
 * GGUF file format. https://huggingface.co/docs/hub/gguf
 * Is my GPU really being used? How do I figure that out?
+* What is MTP optimization? https://unsloth.ai/docs/models/mtp#qwen3.6-mtp
 
 I think a good overall target will be if I can get this setup to help me code this website.
