@@ -59,14 +59,52 @@ After I downloaded the model weights, and got llama.cpp to read that and run a s
 Although, it is excruciatingly slow. The Web UI for the tool was slow too, but at least it returned responses.
 OpenCode just terminated. I'll have to find more efficient models or figure out a better way to run the model.
 
+I was able to find a fix for that, finally. Running `nvidia-smi` tells you if your GPU is being used.
+And in my case, it wasn't so I checked the list of devices from the llama command and used a flag to tell it to use the GPU.
+
+<br/>
+
+## Finding a REST API client
+I've tried out postman, insomnia, bruno over many years, and now yaak's the one which I like the most.
+The UX is the simplest out of all the other tools, it's definitely not corporatey like the first two, and it solves the problems I have.
+Check it out at [yaak.app](https://yaak.app). It has a plugin system too!
+
+<br/>
+
+## Making local inference faster
+These are some of the steps I took to make inference faster:
+1. Make llama cpp use the GPU using the -dev flag
+2. Reduce the number of slots which it uses. By default, it's 4. I reduced it to 1 when a friend told me that it would reduce the split in memory. This reduces time by 3x. It actually controls parallel processing.
+3. Use the Web UI which it brings up. I was using the openai based chat completion API and it used to take a minute to respond to a simple "hi", while the local webpage would respond within 5 seconds. I found that it passes an extra parameter in the request body - `"chat_template_kwargs":{"enable_thinking": false}`. This makes it much faster. There is a flag to turn it off at the server level, `--reasoning off`
+
+With all this done, the qwen model (yes, I said gemma earlier in this article, but I switched to qwen since it's faster), gives responses much faster. It's usable from APIs, but now I need to figure out how to make it usable from opencode.
+
+This is the model which seems to be able to work on a laptop setup - `unsloth/Qwen3.5-4B-GGUF:Q3_K_S`.
+
+Need to figure out how to log the requests that llama receives.
+
+It actually makes sense as to why the chain-of-thought slows down the response, since it generates a lot more tokens.
+However, for simple prompts like "hi", there's no need to do this. I can understand that this is useful for reasoning models when they are working with complex tasks where thinking about an answer in a step-by-step fashion would improve correctness.
+
+<br/>
+
+## What do agentic AI coding harnesses do?
+I added debug logs to the llama server to see how opencode was interacting with it. Some fun things:
+1. Before actually responding to the user, it asks the model to generate a title for the conversation.
+2. It prefers to operate in streaming mode. Which makes sense. To not keep the user waiting.
+3. It asks the server to tell it how much tokens the model read / generated.
+4. It adds large amount of system prompts in the API call, with generous number of examples on how to respond.
+5. It tells the server what tools are available, and how to use them. This is not via text, but through a specific JSON object.
+
+That's really all the special things which it did. Otherwise, the API calls are quite simple.
+
+Debugging the API request / response on the local machine was made simple by tcpdump & scapy.
+
 <br/>
 
 ## Next Learning Items
 I found some new concepts when doing this experiment. Should go over them some time.
-* How to run the mode locally. https://unsloth.ai/docs/models/gemma-4
 * Dynamic quantization. https://unsloth.ai/docs/basics/unsloth-dynamic-2.0-ggufs
 * GGUF file format. https://huggingface.co/docs/hub/gguf
-* Is my GPU really being used? How do I figure that out?
 * What is MTP optimization? https://unsloth.ai/docs/models/mtp#qwen3.6-mtp
-
-I think a good overall target will be if I can get this setup to help me code this website.
+* Why does MTP not work on my device?

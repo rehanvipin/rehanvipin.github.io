@@ -33,14 +33,44 @@ I should do more research and see what’s the complexity about.</p>
 <p>After I downloaded the model weights, and got llama.cpp to read that and run a server, it was really simple to connect it to OpenCode.
 Although, it is excruciatingly slow. The Web UI for the tool was slow too, but at least it returned responses.
 OpenCode just terminated. I’ll have to find more efficient models or figure out a better way to run the model.</p>
+<p>I was able to find a fix for that, finally. Running <code>nvidia-smi</code> tells you if your GPU is being used.
+And in my case, it wasn’t so I checked the list of devices from the llama command and used a flag to tell it to use the GPU.</p>
+<br>
+<h2 id="finding-a-rest-api-client">Finding a REST API client</h2>
+<p>I’ve tried out postman, insomnia, bruno over many years, and now yaak’s the one which I like the most.
+The UX is the simplest out of all the other tools, it’s definitely not corporatey like the first two, and it solves the problems I have.
+Check it out at <a href="https://yaak.app">yaak.app</a>. It has a plugin system too!</p>
+<br>
+<h2 id="making-local-inference-faster">Making local inference faster</h2>
+<p>These are some of the steps I took to make inference faster:</p>
+<ol>
+<li>Make llama cpp use the GPU using the -dev flag</li>
+<li>Reduce the number of slots which it uses. By default, it’s 4. I reduced it to 1 when a friend told me that it would reduce the split in memory. This reduces time by 3x. It actually controls parallel processing.</li>
+<li>Use the Web UI which it brings up. I was using the openai based chat completion API and it used to take a minute to respond to a simple “hi”, while the local webpage would respond within 5 seconds. I found that it passes an extra parameter in the request body - <code>"chat_template_kwargs":{"enable_thinking": false}</code>. This makes it much faster. There is a flag to turn it off at the server level, <code>--reasoning off</code></li>
+</ol>
+<p>With all this done, the qwen model (yes, I said gemma earlier in this article, but I switched to qwen since it’s faster), gives responses much faster. It’s usable from APIs, but now I need to figure out how to make it usable from opencode.</p>
+<p>This is the model which seems to be able to work on a laptop setup - <code>unsloth/Qwen3.5-4B-GGUF:Q3_K_S</code>.</p>
+<p>Need to figure out how to log the requests that llama receives.</p>
+<p>It actually makes sense as to why the chain-of-thought slows down the response, since it generates a lot more tokens.
+However, for simple prompts like “hi”, there’s no need to do this. I can understand that this is useful for reasoning models when they are working with complex tasks where thinking about an answer in a step-by-step fashion would improve correctness.</p>
+<br>
+<h2 id="what-do-agentic-ai-coding-harnesses-do">What do agentic AI coding harnesses do?</h2>
+<p>I added debug logs to the llama server to see how opencode was interacting with it. Some fun things:</p>
+<ol>
+<li>Before actually responding to the user, it asks the model to generate a title for the conversation.</li>
+<li>It prefers to operate in streaming mode. Which makes sense. To not keep the user waiting.</li>
+<li>It asks the server to tell it how much tokens the model read / generated.</li>
+<li>It adds large amount of system prompts in the API call, with generous number of examples on how to respond.</li>
+<li>It tells the server what tools are available, and how to use them. This is not via text, but through a specific JSON object.</li>
+</ol>
+<p>That’s really all the special things which it did. Otherwise, the API calls are quite simple.</p>
+<p>Debugging the API request / response on the local machine was made simple by tcpdump &#x26; scapy.</p>
 <br>
 <h2 id="next-learning-items">Next Learning Items</h2>
 <p>I found some new concepts when doing this experiment. Should go over them some time.</p>
 <ul>
-<li>How to run the mode locally. <a href="https://unsloth.ai/docs/models/gemma-4">https://unsloth.ai/docs/models/gemma-4</a></li>
 <li>Dynamic quantization. <a href="https://unsloth.ai/docs/basics/unsloth-dynamic-2.0-ggufs">https://unsloth.ai/docs/basics/unsloth-dynamic-2.0-ggufs</a></li>
 <li>GGUF file format. <a href="https://huggingface.co/docs/hub/gguf">https://huggingface.co/docs/hub/gguf</a></li>
-<li>Is my GPU really being used? How do I figure that out?</li>
 <li>What is MTP optimization? <a href="https://unsloth.ai/docs/models/mtp#qwen3.6-mtp">https://unsloth.ai/docs/models/mtp#qwen3.6-mtp</a></li>
-</ul>
-<p>I think a good overall target will be if I can get this setup to help me code this website.</p> </article>  </main> </body></html>
+<li>Why does MTP not work on my device?</li>
+</ul> </article>  </main> </body></html>
